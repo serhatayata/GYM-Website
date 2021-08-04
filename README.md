@@ -1,1 +1,1 @@
-# GYM-Website
+I used HTML,CSS and Javascript to design this website. I have used Flex structure here to design my website and made some of them looks more effective. This website is completely responsive for all kinds of devices.
