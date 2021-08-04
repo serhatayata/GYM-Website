@@ -1,0 +1,187 @@
+/* GENERAL CODES */
+* {box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-size: 12px;}
+html {scroll-behavior:smooth;}
+body {background-color: black; color: white; }
+/* LINE */
+.evenline {
+    height: 2px; background-color: red; margin: 5px 0px;
+}
+/* ------- SLIDING -------- */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* ------------------------------------------- */
+/* NAV */
+header nav ul li a { font-size: 18px !important;}
+header nav img { height: 35px; width: 35px;}
+.navbar-brand {width: 15%;}
+.navbar-brand span {font-weight: bold; font-size: 20px;}
+.navbar-nav li {margin-left: 30px;}
+.navbar-nav li a {color: Black; font-weight: bold;}
+/* HIDDEN */
+.reservHidden {display:none;}
+/* PAGE-1 */
+.page1
+{ display: flex;
+  align-items: stretch;
+  height: 100vh;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid red;
+}
+.dot1 {margin-left:50%; margin-top: 20px;}
+.page1box1
+{ border: 1px solid red ;
+  font-size: 10px; 
+  flex-basis: 15%; 
+  border-radius: 15px;
+  padding: 30px 15px 15px 15px; }
+.page1box2
+{ flex-basis: 70%; 
+  padding: 10px 50px 50px 50px;
+} 
+.page1box2 p {text-align: center; color: red; font-weight: bold; font-size: 16px;} 
+.page1box2 img {width: 100%; height: 470px; }
+.page1box3
+{
+  border: 1px solid red ;
+  font-size: 10px; 
+  flex-basis: 15%; 
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  padding: 30px 15px 15px 20px;
+}
+.page1box3title {margin-bottom: 20px;}
+.page1box3 p{margin-top: 20px;}
+.page1box3 input{margin-top: 10px;margin-bottom: 20px; width: 90%;}
+.page1box3 button {width: 90%; margin-top: 10px;}
+.page2
+{ display: flex;
+  flex-wrap: wrap;
+  height: 100vh; width: 100%;
+  border-bottom: 1px solid red;
+}
+
+.page2title {font-weight: bold; text-align: center; color: red;margin: 30px 0px; text-decoration: underline;}
+.page2 div u h1 {margin-left: 25%; margin-bottom: 20px; color: red;}
+.page2 div p {font-size: 16px; text-align: justify; color: red;}
+.page2 div img {
+ height: 80px; width: 80px; float:left; margin:0px 20px 8px 0px;
+}
+.page2box1, .page2box2, .page2box3, .page2box4,.page2box5,.page2box6
+{ border:1px dotted red;
+  width: 33.333%; height: 50%;
+  padding:40px; border-radius: 10px;
+}
+.page3
+{ display: flex; height: 100vh; width: 100%;}
+.page3title {font-weight: bold; text-align: center; color: red;margin: 30px 0px; text-decoration: underline;}
+.page3box1, .page3box2, .page3box3 
+{ width: 33.33333%;
+  border:1px dotted red;
+  padding: 20px;
+  background-color: white;
+}
+.page3 div img {width: 60%; height: 60%; margin-left: 20%;}
+.page3 div p {font-size: 14px; margin-top: 15px; color: red; font-weight: bold; text-align: center;}
+.page4
+{ display: flex;
+  align-items: stretch;
+  height: 100%; width: 100%;
+  background:url("img/Contact.jpg") center center no-repeat;
+  background-size: cover;
+}
+.page4title {font-weight: bold; text-align: center; color: red;margin: 30px 0px; text-decoration: underline;}
+.page4box2
+{ width: 40%;}
+.page4box2 label,input {font-size: 14px;} 
+.page4box2 .btn {font-size: 16px; margin:10px 0px;}
+.page4box2 label {margin:5px 0px; color: red;}
+.page4box2 .com1,.page4box2 u {font-size: 15px; color:red; font-weight: bold; text-align: center; margin-top: 5px;}
+.page4box1,.page4box3
+{width:30%;}
+/* --------------------------------------------------------------------------------- */
+@media screen and (min-width:992px) and (max-width:1350px) {
+/* HIDDEN */
+.reservHidden {display:inline-block;}  
+.page1box3,.page1box1 {display: none;}
+}
+/* PAGE1 */
+.page1box2
+{ flex-basis: 100%; } 
+/* ------------------------------------- */
+@media screen and (min-width:768px) and (max-width:992px)
+{ /* HIDDEN */
+  .page1box2
+  { flex-basis: 100%; } 
+  .page1box3,.page1box1 {display: none;}
+  .page2 div img {width: 60px; height: 60px;}
+  /* PAGE2 */
+  .page2 div u h1 {font-size:22px}
+  .page2 div p {font-size: 15px;}
+  /* PAGE3 */
+  .page3 div p {font-size: 12px;}
+   /* PAGE4 */
+   .page4title,.page3title,.page2title {font-size: 22px;}
+}
+@media screen and (min-width:576px) and (max-width:768px)
+{ /* HIDDEN */
+  .page1box2
+  { flex-basis: 100%; } 
+  .page1box3,.page1box1 {display: none;}
+  /* PAGE2 */
+  .page2 div u h1 {font-size:18px}
+  .page2 div img {width: 35px; height: 35px;}
+  .page2 div p {font-size: 11px;}
+  /* PAGE3   */
+  .page3 div p {font-size: 11px; margin-top: 20px;}
+  .page3 div img {height: 200px; font-weight: 60px; margin-top: 60px;}
+  /* PAGE4 */
+  .page4title,.page3title,.page2title {font-size: 18px;}
+}
+@media screen and (max-width:576px) 
+{ .page1box3,.page1box1 {display: none;}
+  .page1box2
+  { flex-basis: 100%;} 
+  .page1box2 img {height:350px;}
+  .dot1 {margin-left:35%}
+  /* PAGE2 */
+  .page2 div {padding:10px;}
+  .page2 div u h1 {font-size:12px; text-align: center; margin-left:0}
+  .page2 div p {font-size: 10px;}
+  .page2 div img {width: 70px; height: 70px; margin-left: 12%;}
+  /* PAGE3 */
+  .page3 div p {font-size: 11px; margin-top: 30px;}
+  .page3 div img {height: 100px; font-weight: 60px; margin-top: 80px;}
+    /* PAGE4 */
+    .page4title,.page3title,.page2title {font-size: 16px;}
+    .page4box2 .com1,.page4box2 u {font-size: 11px;}
+}
+
+
+
+

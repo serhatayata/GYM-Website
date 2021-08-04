@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website13</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="GYM-Website.css">
+<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+<!-- NAVIGATOR -->
+<nav class="navbar sticky-top navbar-danger navbar-expand-lg bg-danger nav-fill nav-tabs" id="navbar-1">
+    <!-- BRAND -->
+    <span class="navbar-brand h1">
+     <span class="brandtitle" id="brandId"><img src="img/S.png" width="35px" height="35px"> GYM CENTER</span>
+    </span>
+    <!-- BUTTON -->
+    <button class="navbar-toggler navbar-light bg-warning" type="button" data-toggle="collapse" data-target="#navbarMenu">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- ITEMS -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+     <ul class="navbar-nav nav-warning bg-danger h5">
+       <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+       <li class="nav-item"><a href="#trainers" class="nav-link">Trainers</a></li>
+       <li class="nav-item"><a href="#nutrition" class="nav-link">Nutrition</a></li>
+       <li class="nav-item reservHidden"><a href="#" class="nav-link">Reservation</a></li>     
+       <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li> 
+     </ul>
+     <form class="form-inline">
+        <ul class="navbar-nav bg-danger mr-auto">
+            <li class="nav-item dropdown bg-danger">
+                    <a href="#" class="nav-link dropdown-toggle mainpart popup1" data-toggle="dropdown" role="button">Login </a>
+                    <div class="dropdown-menu bg-danger">
+                        <label class="form-control dropdown-item popup1">Username</label>
+                        <input type="text" name="username" id="username1" class="form-control dropdown-item popup1 bg-light">
+                        <label class="form-control dropdown-item popup1">Password</label>
+                        <input type="password" name="password" id="password1" class="form-control dropdown-item bg-light popup1">
+                        <div class="dropdown-divider popup1"></div>
+                        <a href="#" class="dropdown-item popup1" type="button">Login</a> 
+                        <div class="dropdown-divider popup1"></div>  
+                        <a href="#" class="dropdown-item popup1">Sing Up!</a>
+                        <div class="dropdown-divider popup1"></div>
+                        <a href="#" class="dropdown-item popup1">Forgot Password</a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+   </nav>
+</header>
+<main>
+<!-- PAGE1 -->
+<div class="container-fluid page1">
+ <div class="page1box1">
+    <marquee scrollamount="6" height="500px" width="100%" direction="down" class="comments">
+        <p>John</p>
+        <p>Looks great!!</p>
+        <div class="evenline"></div>
+        <p>Nicole</p>
+        <p>I will try this again.</p>
+        <div class="evenline"></div>
+        <p>Helena</p>
+        <p>I will recommend this place...</p>
+        <div class="evenline"></div>
+        <p>Ethan</p>
+        <p>I have explored this place so late...</p>
+        <p>Looks great!!</p>
+        <div class="evenline"></div>
+        <p>Nicole</p>
+        <p>I will try this again.</p>
+        <div class="evenline"></div>
+        <p>Helena</p>
+        <p>I will recommend this place...</p>
+        <div class="evenline"></div>
+        <p>Ethan</p>
+        <p>I have explored this place so late...</p>
+    </marquee>
+ </div>
+    <div class="page1box2">
+        <div class="Sliding fade">
+            <p>HAVE A GREAT BODY!</p><p>WITH GREAT EQUIPMENTS...</p>
+              <img src="img/Gym-1.jpg">
+          </div>
+          <div class="Sliding fade">
+            <p>NEVER GIVE UP!</p><p>COME AND JOIN US!</p>
+            <img src="img/Gym-2.jpg">
+        </div>
+        <div class="Sliding fade">
+            <p>HEALTHY AND SAFE</p><p>WITH MANY NUTRITIONS...</p>
+            <img src="img/Gym-3.jpg">
+        </div> 
+        <div class="Sliding fade">
+            <p>EXPERIENCED TRAINERS</p><p>YOU CAN BE TRAINED PERFECTLY!</p>
+            <img src="img/Gym-4.png">
+        </div> 
+          <div class="dots">
+              <span class="dot dot1"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+            </div>   
+    </div>
+<div class="page1box3">
+<h5 class="page1box3title">Reservation &nbsp;&nbsp;<i class="fas fa-calendar-alt"></i></h5>
+<div class="evenline"></div>
+<p class="chooseA" id="chooseAdate">Choose a date</p>
+<input type="datetime-local">
+<label>Name :</label>
+<input type="text" id="name1">
+<label>Surname :</label>
+<input type="text" id="surname1">
+<label>Phone :</label>
+<input type="tel" id="tel1" onchange="overflowTel()" onkeypress="return isNumberKey(event)">
+<button class="btn btn-danger bg-danger">
+Done
+</button>
+</div>
+</div>
+<!-- ------------------------------------ -->
+<!-- PAGE2 -->
+<h1 class="page2title" id="trainers">TRAINERS</h1>
+<div class="container-fluid page2">
+<div class="page2box1" id="cbox1">
+    <img src="img/Trainer-woman.png"> 
+    <u><h1> Mrs. Helena</h1></u>
+    <p>Mrs. Helena has been living in Istanbul for 5 years and working as a trainer for 2 years. She graduated from university 3 years ago. And she has been working in our company for a year.</p>           
+</div>
+<div class="page2box2" id="cbox2">
+    <img src="img/Trainer-woman.png">    
+    <u><h1> Mrs. Jennifer</h1></u>
+    <p>Mrs. Jennifer has been living in Ankara for 15 years and working as a trainer for 10 years. She graduated from university 11 years ago. And she has been working in our company for 5 years.</p>        
+</div>
+    <div class="page2box3" id="cbox3">
+    <img src="img/Trainer-woman.png"> 
+    <u><h1> Mrs. Helena</h1></u>
+    <p>Mrs. Helena has been living in Istanbul for 5 years and working as a trainer for 2 years. She graduated from university 3 years ago. And she has been working in our company for a year.</p>           
+</div>
+<div class="page2box4" id="cbox4">
+    <img src="img/Trainer-man.png"> 
+    <u><h1> Mr. Tony</h1></u>
+    <p>Mr. Tony has been living in Istanbul for 7 years and working as a trainer for 4 years. He graduated from university 4 years ago. And he has been working in our company for 4 years.</p> 
+</div>
+<div class="page2box5" id="cbox5">
+    <img src="img/Trainer-man.png">    
+    <u><h1> Mr. Paul</h1></u>
+    <p>Mr. Paul has been living in Istanbul for 2 years and working as a trainer for 2 years. He graduated from university 7 years ago. And he has been working in our company for 2 years.</p> 
+</div>
+<div class="page2box6" id="cbox6">
+    <img src="img/Trainer-woman.png">  
+    <u><h1> Mrs. Rose</h1></u>
+    <p>Mrs. Rose has been living in Istanbul for 7 years and working as a trainer for 4 years. She graduated from university 4 years ago. And she has been working in our company for 4 years.</p>  
+</div>
+</div>
+<!-- ---------------------------------------------- -->
+<!-- PAGE3 -->
+<h1 class="page3title" id="nutrition">NUTRITIONS</h1>
+<div class="container-fluid page3">
+ <div class="page3box1">
+  <img src="img/Protein-1.jpg">
+  <p>Brand : Hardline </p>
+  <p>Gram : 600g </p>
+  <p>Protein Rate : %76.5</p>
+  <p>Sugar Rate : %4.7</p>
+  <p>Carbohydrate Rate : %5.3</p>
+  <p>Cost : 35 $</p>
+ </div>
+ <div class="page3box2">
+    <img src="img/Protein-2.jpg">
+  <p>Brand : Supplementer </p>
+  <p>Gram : 1000g </p>
+  <p>Protein Rate : %74.5</p>
+  <p>Sugar Rate : %4.5</p>
+  <p>Carbohydrate Rate : %5.2</p>
+  <p>Cost : 45 $</p>
+</div>
+<div class="page3box3">
+    <img src="img/Protein-3.jpg">
+    <p>Brand : Scitec </p>
+    <p>Gram : 1000g </p>
+    <p>Protein Rate : %73.3</p>
+    <p>Sugar Rate : %4.7</p>
+    <p>Carbohydrate Rate : %4.7</p>
+    <p>Cost : 55 $</p>
+</div>
+</div>
+<!-- --------------------------------------------------- -->
+<!-- PAGE4 -->
+<div class="container-fluid page4">
+<div class="page4box1"></div>
+<div class="page4box2">
+<form>
+<div class="form-group">
+<h1 class="page4title" id="contact">CONTACT</h1>
+<label id="nameLabel" class="form-control-label">Name</label>
+<input type="text" id="nameInput" class="form-control">
+</div>
+<div class="form-group">
+<label id="surnameLabel">Surname</label>
+<input type="text" id="surnameInput" class="form-control">
+</div>
+<div class="form-group">
+<label id="emailLabel" class="form-control-label">E-mail</label>
+<input type="email" id="emailinput" class="form-control">
+</div>
+<div class="form-group">
+<label id="phoneLabel" class="form-control-label">Phone</label>
+<input type="password" id="passwordInput" class="form-control">
+</div>
+<div class="form-group">
+<label id="messageLabel" class="form-control-label">Message</label>
+<textarea id="textarea1" rows="5" class="form-control"></textarea>
+</div>
+<div class="form-group">
+<input type="button" class="btn btn-danger bg-danger btn-md form-control" value="Send">
+</div>
+</form>
+<p class="com1"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;<u>Phone</u> :  (222) 222 22 22</p>
+<p class="com1"><i class="far fa-envelope-open"></i>&nbsp;&nbsp;<u>E-mail</u> : serhat@serhat.com </p>
+</div>
+<div class="page4box3"></div>
+</div>
+</main>
+<script type="text/javascript" src="js/GYM-WebsiteJS.js"></script>
+</body>
+</html>
